@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use these simulation modules or code layouts in your research or energy system assessments, please cite it as below."
+authors:
+  - family-names: "Boodaghi"
+    given-names: "Homayoun"
+    orcid: "https://orcid.org/0000-0002-4959-4925"
+title: "Electrochemical-Conversion-Modules: High-Fidelity PEME and PEMFC Simulation Suites"
+version: "1.0.0"
+date-released: "2026-06-12"
+url: "https://github.com/Boodaghi/Electrochemical-Conversion-Modules"
+references:
+  - type: article
+    authors:
+      - family-names: "Boodaghi"
+        given-names: "Homayoun"
+    title: "Design and Performance Assessment of a Novel Poly-generation System with Stable Production of Electricity, Hydrogen, and Hot Water: Energy and Exergy Analyses"
+    journal: "Arabian Journal for Science and Engineering"
+    year: 2023
+    doi: "10.1007/s13369-023-08410-7"
+  - type: article
+    authors:
+      - family-names: "Boodaghi"
+        given-names: "Homayoun"
+    title: "Achieving holistic sustainability in solar-hydrogen systems: A 6E-based multi-objective optimization of a PV–PEMFC–PEME–ORC integrated framework"
+    journal: "Thermal Science and Engineering Progress"
+    year: 2026
+    doi: "10.1016/j.tsep.2026.104773"
