@@ -21,7 +21,7 @@ These models form the computational framework for the following peer-reviewed re
 The fuel cell model utilizes a rigorous **Ulleberg-style semi-empirical formulation** rather than generalized textbook parameters. It cleanly handles mass transport and concentration drop-offs by lumping them directly into a current-dependent empirical membrane resistance function using a water-deficiency exponent ($\gamma = 1.2$).
 
 Key mathematical elements implemented:
-* **Interfacial Channel Depletion:** Accounts for localized reactant depletion along gas flow channels via exponential decay functions ($p_{\text{H}_2}$ and $p_{\text{O}_2}$).
+* **Interfacial Channel Depletion:** Accounts for localized reactant depletion along gas flow channels via exponential decay functions.
 * **Activation Overpotential:** Evaluated using pre-fitted numerical kinetic coefficients matched to experimental data.
 * **HHV Efficiency Tracking:** Evaluates first-law electrical efficiency directly against the Higher Heating Value (HHV) reference state of hydrogen ($\approx 285.83 \text{ kJ/mol}$).
 
