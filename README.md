@@ -1,8 +1,8 @@
 # Electrochemical Conversion Modules
 
-A high-fidelity, open-source Python suite for simulating, validating, and optimizing electrochemical energy conversion components. This repository houses verified, steady-state numerical models for both **Proton Exchange Membrane Electrolyzers (PEME)** and **Proton Exchange Membrane Fuel Cells (PEMFC)**. 
+Welcome to the **Electrochemical-Conversion-Modules** repository. This open-access library features high-fidelity computational models for advanced electrochemical conversion cells, hydrogen conditioning arrays, and complex transient energy storage subsystems. 
 
-All modules are written in Python (Jupyter Notebooks) and cross-validated directly against Engineering Equation Solver (EES) benchmarks to guarantee thermodynamic and electrochemical precision down to the fourth decimal place.
+By transitioning classic empirical or EES formulations into robust, self-contained Python structures, this suite provides researchers with high-throughput tools to track degradation boundaries, mass transfers, and voltage overpotential dynamics natively.
 
 ---
 
@@ -17,7 +17,7 @@ These models form the computational framework for the following peer-reviewed re
 
 ## 🔬 Component Frameworks
 
-### 1. PEM Fuel Cell Module (`PEMFC.ipynb`)
+### 1. PEM Fuel Cell (`PEMFC.ipynb`)
 The fuel cell model utilizes a rigorous **Ulleberg-style semi-empirical formulation** rather than generalized textbook parameters. It cleanly handles mass transport and concentration drop-offs by lumping them directly into a current-dependent empirical membrane resistance function using a water-deficiency exponent ($\gamma = 1.2$).
 
 Key mathematical elements implemented:
@@ -25,10 +25,42 @@ Key mathematical elements implemented:
 * **Activation Overpotential:** Evaluated using pre-fitted numerical kinetic coefficients matched to experimental data.
 * **HHV Efficiency Tracking:** Evaluates first-law electrical efficiency directly against the Higher Heating Value (HHV) reference state of hydrogen ($\approx 285.83 \text{ kJ/mol}$).
 
-### 2. PEM Electrolyzer Module (`PEME.ipynb`)
+### 2. PEM Electrolyzer (`PEME.ipynb`)
 The inverse electrochemical process maps water splitting kinetics to determine precise voltage inputs, overpotentials, and high-purity hydrogen/oxygen production rates under varying thermal and pressure states.
 
 ---
+
+## 📂 Repository Architecture & Submodule Mapping
+
+This workspace is explicitly structured into modular, self-contained subdirectories. Each module includes its own standalone documentation tracker, production scripts, and interactive visual workbooks:
+
+```text
+Electrochemical-Conversion-Modules/
+├── CITATION.cff           # Global citation registry for academic indexing
+├── README.md              # Global electrochemical portfolio front-page documentation
+├── requirements.txt       # Unified environment package installation manifest
+├── Battery/
+│   ├── Battery.ipynb      # Non-linear Saupe-Schöner lead-acid battery voltage model
+│   ├── Battery.py         # Production standalone battery bank runtime script
+│   └── README.md          # Subfolder tracker mapping overpotential equations & gassing ramps
+├── Hydrogen_Storage/
+│   ├── Storage.ipynb      # Precision Leachman Fundamental EOS hydrogen tank model
+│   ├── Storage.py         # Production standalone compressed gas charging script
+│   └── README.md          # Subfolder tracker verifying quantum compressibility deviations
+├── Oxygen_Storage/
+│   ├── Storage.ipynb      # Precision Stewart-Jacobsen Fundamental EOS tank model
+│   ├── Storage.py         # Production standalone compressed gas charging script
+│   └── README.md          # Subfolder tracker verifying quantum compressibility deviations
+├── PEME/
+│   ├── PEME.ipynb         # Proton Exchange Membrane Electrolyzer electrochemical cell stack model
+│   ├── PEME.py            # The production-ready standalone Python runtime execution script
+│   └── README.md          # Validation tracking descriptor linked to the 2026 TSEP paper
+└── PEMFC/
+    ├── PEMFC.ipynb        # Proton Exchange Membrane Fuel Cell polarization overpotential model
+│   ├── PEMFC.py           # The optimized standalone Python script for modular system integration    
+    └── README.md          # Validation tracking descriptor linked to the 2026 TSEP paper
+
+
 
 ## 📊 Validation & Verification Gate
 

@@ -1,0 +1,11 @@
+# ⚙️ Global Environment Provisioning
+
+numpy>=1.22.0
+pandas>=1.4.0
+matplotlib>=3.5.0
+scipy>=1.8.0
+coolprop>=6.4.1
+
+$ Install the baseline environment via terminal execution:
+
+pip install -r requirements.txt
