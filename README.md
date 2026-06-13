@@ -59,22 +59,7 @@ Electrochemical-Conversion-Modules/
     ├── PEMFC.ipynb        # Proton Exchange Membrane Fuel Cell polarization overpotential model
 │   ├── PEMFC.py           # The optimized standalone Python script for modular system integration    
     └── README.md          # Validation tracking descriptor linked to the 2026 TSEP paper
-
-
-
-## 📊 Validation & Verification Gate
-
-The models are verified at a core reference operating point ($I = 100 \text{ A}$, $T_{\text{stack}} = 333.7 \text{ K}$, $P_{\text{in}} = 3.041 \text{ bar}$):
-
-| Parameter | EES Baseline Target | Python Output | Validation Status |
-| :--- | :---: | :---: | :---: |
-| **Single Cell Voltage ($V_{\text{cell}}$)** | $0.6722 \text{ V}$ | **$0.6723 \text{ V}$** | **Converged (99.9%)** |
-| **Stack Power ($W_{\text{elec}}$)** | $6.722 \text{ kW}$ | **$6.723 \text{ kW}$** | **Converged (99.9%)** |
-| **Electrical Efficiency ($\eta_{\text{e}}$)** | $45.56\%$ | **$45.58\%$** | **Converged (99.9%)** |
-| **$\text{H}_2$ Consumption/Flow Rate** | $69.69 \text{ SLPM}$ | **$69.69 \text{ SLPM}$** | **Converged (100.0%)** |
-| **$\text{O}_2$ Consumption/Flow Rate** | $34.85 \text{ SLPM}$ | **$34.84 \text{ SLPM}$** | **Converged (99.9%)** |
-
----
+```
 
 ## 🛠️ Dependencies & Execution
 
