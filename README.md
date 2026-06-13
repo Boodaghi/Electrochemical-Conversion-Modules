@@ -57,8 +57,9 @@ Electrochemical-Conversion-Modules/
 │   └── README.md          # Validation tracking descriptor linked to the 2026 TSEP paper
 └── PEMFC/
     ├── PEMFC.ipynb        # Proton Exchange Membrane Fuel Cell polarization overpotential model
-│   ├── PEMFC.py           # The optimized standalone Python script for modular system integration    
+    ├── PEME.py            # The production-ready standalone Python runtime execution script    
     └── README.md          # Validation tracking descriptor linked to the 2026 TSEP paper
+
 ```
 
 ## 🛠️ Dependencies & Execution
@@ -66,4 +67,4 @@ Electrochemical-Conversion-Modules/
 To run these notebooks locally within your JupyterLab or VS Code environment, ensure you have standard scientific computing libraries installed:
 
 ```bash
-pip install numpy
+pip install numpy matplotlib pandas scipy coolprop 
